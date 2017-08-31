@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
 import World from '@/components/World'
 import Login from '@/views/Login'
 
@@ -14,11 +13,6 @@ export default new Router({
       path: '/',
       name: 'World',
       component: World
-    },
-    {
-      path: '/hello',
-      name: 'Hello',
-      component: Hello
     },
     {
       path: '/login',
