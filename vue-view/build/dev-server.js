@@ -66,8 +66,14 @@ app.use(hotMiddleware)
 var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 app.use(staticPath, express.static('./static'))
 
+var bodyParser = require('body-parser')
+var jsonParser = bodyParser.json()  
+// create application/x-www-form-urlencoded parser  
+var urlencodedParser = bodyParser.urlencoded({ extended: false }) 
+app.use(bodyParser())
 // 其他模块的加载可采用vue组件的形式进行路径切换，api的请求就需要用到router
-// var router = require('../server/router');
+var router = require('../server/router');
+app.post('/api/login', router.login);
 
 
 var uri = 'http://localhost:' + port
