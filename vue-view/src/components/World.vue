@@ -1,4 +1,4 @@
-<<template>
+<template>
   <div class="world">
       <my-header></my-header>
       ...
@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import MyHeader from 'MyHeader'
+import MyHeader from './MyHeader'
 export default {
   name: 'hello',
   data () {
