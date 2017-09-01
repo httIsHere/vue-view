@@ -1,5 +1,5 @@
 <template>
-  <div class="world">
+  <div class="Firstpage">
       <my-header></my-header>
       ...
       <p>{{msg}}</p>
@@ -10,7 +10,7 @@
 <script>
 import MyHeader from './MyHeader'
 export default {
-  name: 'hello',
+  name: 'firstpage',
   data () {
     return {
       msg: 'htt is here'

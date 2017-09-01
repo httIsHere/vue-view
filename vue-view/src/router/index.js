@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import World from '@/components/World'
+import Firstpage from '@/components/Firstpage'
 import Login from '@/views/Login'
 
 // const Login = () => import('../view/Login.vue');
@@ -11,8 +11,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'World',
-      component: World
+      name: 'Firstpage',
+      component: Firstpage
     },
     {
       path: '/login',
