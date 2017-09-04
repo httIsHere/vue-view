@@ -4,6 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import axios from 'axios'
+// import $ from 'jquery'
+import bootstrap from 'bootstrap'
+// import './assets/js/jquery.min'
+// import './assets/js/popper.min'
+// import './assets/js/bootstrap'
 
 Vue.prototype.axios = axios
 Vue.config.productionTip = false

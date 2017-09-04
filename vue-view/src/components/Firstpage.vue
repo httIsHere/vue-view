@@ -1,14 +1,13 @@
 <template>
   <div class="Firstpage">
       <my-header></my-header>
-      ...
-      <p>{{msg}}</p>
-      <a href="/#/hello">hello</a>
+      <my-main></my-main>
   </div>
 </template>
 
 <script>
 import MyHeader from './MyHeader'
+import MyMain from './MyMain'
 export default {
   name: 'firstpage',
   data () {
@@ -17,7 +16,8 @@ export default {
     }
   },
   components: {
-    MyHeader
+    MyHeader,
+    MyMain
   }
 }
 </script>

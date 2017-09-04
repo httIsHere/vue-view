@@ -10,6 +10,7 @@ export default {
 }
 </script>
 <style>
+	@import url("assets/css/bootstrap.min.css");
 	@import url("assets/css/layout.css");
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
