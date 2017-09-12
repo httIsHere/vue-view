@@ -254,6 +254,7 @@ img{
 .Topstory-mainColumn{
 	margin-right: 10px;
 }
+/*卡片状展示*/
 .Card {
     margin-bottom: 10px;
     background: #fff;
@@ -311,4 +312,65 @@ img{
 .Feed-meta{
 	color: #8590A6;
 	line-height: 1;
+}
+.Content-item-title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.6;
+    color: #1e1e1e;
+    margin-top: -4px;
+    margin-bottom: -4px;
+}
+.Content-item-title+.Content-item-meta{
+	margin-top: 6px;
+}
+.Content-item-meta{
+	font-size: 15px;
+	color: #555;
+}
+.AnswerItem-meta {
+    position: relative;
+    margin-top: 14px;
+}
+.AuthorInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.AuthorInfo--plain .AuthorInfo-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 10px;
+}
+.AuthorInfo-content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-left: 14px;
+    overflow: hidden;
+}
+.AuthorInfo-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 15px;
+    line-height: 1.1;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+.AuthorInfo-name {
+    font-weight: 600;
+}
+.AuthorInfo-detail {
+    overflow: hidden;
+}
+.RichContent{
+	line-height: 1.67;
 }

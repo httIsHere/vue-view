@@ -16,7 +16,7 @@
   								<input type="text" class="Input" id="" value="" placeholder="搜索你感兴趣的内容..." @focus="inputFocused(1)" @focusout="inputFocused(2)"/>
   								<div class="Input-after">
   									<button class="Button SearchBar-searchIcon Button--primary">
-  										o
+  										Go
   									</button>
   								</div>
   							</div>

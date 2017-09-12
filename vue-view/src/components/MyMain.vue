@@ -22,7 +22,45 @@
 										</div>
 									</div>
 									<div class="Content-item Answer-item">
-										<h2 class="Content-item-title"></h2>
+										<h5 class="Content-item-title">猪猪不会^(*￣(oo)￣)^</h5>
+										<div class="Content-item-meta">
+											<div class="AuthorInfo AuthorInfo--plain">
+												<span class="UserLink AuthorInfo-avatarWrapper">
+													<div class="Popover">
+														<div id="Popover-toggle">
+															<a href="" class="UserLink-link">
+																<img src="" alt="" class="Avatar AuthorInfo-avatar" width="24" height="24"/>
+															</a>
+														</div>
+													</div>
+												</span>
+												<div class="AuthorInfo-content">
+													<div class="AuthorInfo-head">
+														<span class="UserLink AuthorInfo-name">啾啾⑨</span>
+													</div>
+													<div class="AuthorInfo-detail">hhhh~</div>
+												</div>
+											</div>
+										</div>
+										<div class="RichContent is-collapsed">
+											<div class="RichContent-inner">
+												<span class="RichText CopyrightRichText-richText">较好的关键是客观上快递考核</span>
+												<button class="Button Content-item-more Button--plain">阅读全文▽</button>
+											</div>
+											<div class="Content-item-actions">
+												<span>
+													<button class="Button VoteButton VoteButton--up">▲</button>
+													<button class="Button VoteButton VoteButton--down">▼</button>
+													<button class="Button Content-item-action Button--plain">☀ 15条评论</button>
+													<button class="Button Content-item-action Button--plain">※ 分享</button>
+													<button class="Button Content-item-action Button--plain">★ 收藏</button>
+													<button class="Button Content-item-action Button--plain">❤ 感谢</button>
+													<div class="Popover Content-item-action">
+														<button class="Button Button--plain">···</button>
+													</div>
+												</span>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
