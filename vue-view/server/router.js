@@ -18,3 +18,12 @@ exports.login = function(req, res, next) {
         })
     }
 }
+exports.question = function(req, res, next) {
+    let title = req.body.title;
+    let tag = req.body.tag;
+    let desp = req.body.desp;
+    return res.json({
+        'code': 200,
+        "message": "ok"
+    })
+}

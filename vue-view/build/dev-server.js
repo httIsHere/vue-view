@@ -74,6 +74,7 @@ app.use(bodyParser())
 // 其他模块的加载可采用vue组件的形式进行路径切换，api的请求就需要用到router
 var router = require('../server/router');
 app.post('/api/login', router.login);
+app.post('/api/question', router.question);
 
 
 var uri = 'http://localhost:' + port

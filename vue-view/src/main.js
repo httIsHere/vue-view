@@ -6,9 +6,7 @@ import router from './router'
 import axios from 'axios'
 // import $ from 'jquery'
 import bootstrap from 'bootstrap'
-// import './assets/js/jquery.min'
-// import './assets/js/popper.min'
-// import './assets/js/bootstrap'
+import store from './store'
 
 Vue.prototype.axios = axios
 Vue.config.productionTip = false
@@ -17,31 +15,9 @@ axios.defaults.timeout = 5000
 const baseURL = 'http://localhost:3001/api'
 axios.defaults.baseURL = baseURL
 axios.defaults.baseURL = baseURL
-
-// http response interceptors
-// axios.interceptors.response.use(
-//   response => {
-//     return response
-//   },
-//   error => {
-//     if (error.response) {
-//       console.log(error.response.status)
-//     }
-//     return Promise.reject(error.response.data)
-//   })
-
-// http request interceptors
-// axios.interceptors.request.use(
-//   config => {
-//     return config
-//   },
-//   error => {
-//     return Promise.reject(error)
-//   })
-
-/* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   template: '<App/>',
   components: { App }
