@@ -55,6 +55,9 @@ textarea {
     font-family: monospace;
     border-color: rgb(169, 169, 169);
 }
+li{
+	list-style: none;
+}
 /*--------------------------------header----------------------------*/
 .header{
 	width: 100%;
@@ -795,4 +798,38 @@ img{
 }
 .QuestionAsk-buttonGroup .Button {
     width: 232px;
+}
+.todos{
+	position: fixed;
+    bottom: 0;
+    right: 0px;
+    width: 296px;
+    height: 200px;
+    padding: 15px;
+}
+.todos .todos-title{
+	text-align: center;
+}
+.todos-content{
+	height: 110px;
+	overflow-y: scroll;
+}
+.todos-list{
+	margin: 0;
+	padding: 0;
+	margin-top: 5px;
+}
+.todos-list li span{
+	margin-left: 10px;
+}
+.todos-list .finished{
+	text-decoration: line-through;
+}
+.todos-action{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+.todos-actionItem{
+	cursor: pointer;
 }

@@ -122,7 +122,7 @@
 		</div>
 	</div>
 	<div class="Modal-Wrapper" v-if="ask">
-		<div class="Modal-backdrop"></div>
+		<div class="Modal-backdrop" @click="ask=false"></div>
 		<div class="Modal Modal--large QuestionAsk-Modal">
 			<div class="Modal-inner">
 				<h3 class="Modal-title">Your question</h3>
