@@ -4,36 +4,28 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-    count: 0,
-    todos: [
-        { id: 1, text: '...', done: true },
-        { id: 2, text: '...', done: true },
-        { id: 3, text: '...', done: false }
-    ],
     articles:[
-        { id: 1, title: 'xxxxx', content: 'kjgbjgsdehjgwhejhgwdjgfuiwyg', author: 'htt'},
-        { id: 1, title: 'xxxxx', content: 'kjgbjgsdehjgwhejhgwdjgfuiwyg', author: 'htt'},
-        { id: 1, title: 'xxxxx', content: 'kjgbjgsdehjgwhejhgwdjgfuiwyg', author: 'htt'},
-        { id: 1, title: 'xxxxx', content: 'kjgbjgsdehjgwhejhgwdjgfuiwyg', author: 'htt'}
+        { title: 'xxxxx', content: 'kjgbjgsdehjgwhejhgwdjgfuiwyg', author: 'htt', show: true, draft: false},
+        { title: 'xxxxx', content: 'kjgbjgsdehjgwhejhgwdjgfuiwyg', author: 'htt', show: true, draft: false},
+        { title: 'xxxxx', content: 'kjgbjgsdehjgwhejhgwdjgfuiwyg', author: 'htt', show: true, draft: false},
+        { title: 'xxxxx', content: 'kjgbjgsdehjgwhejhgwdjgfuiwyg', author: 'htt', show: true, draft: false}
     ]
 }
 const getters = {
-    doneTodos: state => {
-        return state.todos.filter(todo => todo.done)
-    }
 }
 const mutations = {
-    cnt (state) {
-        state.count++;
-    },
-    updateDate (state, data) {
-        state.count = data
-    }
+	ADD_NOTE (state, title, content) {
+		const newNote = {
+			title: title,
+			content: content,
+			author: 'htt',
+			show: true,
+			draft: false
+		}
+		state.articles.push(newNote)
+	}
 }
 const actions = {
-    hhhh (context) {
-        context.commit('cnt')
-    }
 }
 export default new Vuex.Store({
     state,

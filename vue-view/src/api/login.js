@@ -1,12 +1,12 @@
 import axios from 'axios'
 
-export function login(url, username, password) {
+export function login(url, username, password,cb) {
 	axios.post(url, {
 		username: username,
-		password: uPassword
+		password: password
 	}).then((res) => {
-		console.log(res);
+		cb(res);
 	}, (err) => {
-		console.log(err);
+		cb(err);
 	})
 }

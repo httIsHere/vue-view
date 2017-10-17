@@ -8,16 +8,15 @@
 </template>
 
 <script>
-import MyHeader from './MyHeader'
-import MyMain from './MyMain'
-import Corner from './Corner'
+import MyHeader from '../components/MyHeader'
+import MyMain from '../components/MyMain'
+import Corner from '../components/Corner'
 export default {
   name: 'firstpage',
   data () {
     return {
       msg: 'htt is here',
-      count: this.$store.state.count,
-      todos: this.$store.getters.doneTodos
+      count: this.$store.state.count
     }
   },
   components: {

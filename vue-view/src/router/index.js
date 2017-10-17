@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Firstpage from '@/components/Firstpage'
+import Firstpage from '@/views/Firstpage'
 import Ask from '@/components/Ask'
 import Login from '@/views/Login'
+import Write from '@/views/Write'
 
-// const Login = () => import('../view/Login.vue');
 
 Vue.use(Router)
 
@@ -27,7 +27,9 @@ export default new Router({
       component: Login
     },
     {
-    	path: ''
+    	path: '/write',
+    	name: 'Write',
+    	component: Write
     }
   ]
 })

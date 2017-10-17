@@ -341,7 +341,7 @@ img{
 }
 .Topstory-main{
 	width: 694px;
-	padding-bottom: 20px;
+	/*padding-bottom: 20px;*/
 }
 .Topstory-item{
 	position: relative;
@@ -804,8 +804,13 @@ img{
     bottom: 0;
     right: 0px;
     width: 296px;
-    height: 200px;
+    height: 230px;
     padding: 15px;
+}
+.todos p{
+	text-align: right;
+	margin-bottom: .5rem;
+	cursor: pointer;
 }
 .todos .todos-title{
 	text-align: center;
@@ -832,4 +837,26 @@ img{
 }
 .todos-actionItem{
 	cursor: pointer;
+}
+/*--------------------写文章顶栏--------------*/
+.header-littleTitle{
+	width: 850px;
+	margin: 0 auto;
+}
+.header-pub .Button-disabled{
+	color: #ccd8e1;
+	border-color: #ccd8e1;
+}
+/*---------------------写文章------------------*/
+.write-view{
+	width: 850px;
+	margin: 60px auto;
+	padding: 20px;
+}
+.write-title input{
+	width: 100%;
+	font-size: 25px;
+}
+.write-content textarea{
+	width: 100%;
 }

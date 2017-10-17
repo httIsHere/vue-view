@@ -10,6 +10,7 @@
     </div>
 </template>
 <script>
+import {login} from "../api/login";
 export default {
   name: 'Login',
   data () {
@@ -21,12 +22,9 @@ export default {
   },
   methods: {
     login () {
-//    console.log(this.username)
-//    this.$toasted.show(data.data.message)
-      this.axios.post('/login', {
-        'username': this.username,
-        'password': this.password
-      }).then((data) => {
+	  login('/login', this.username, this.password, this.initLogin);
+    },
+    initLogin(data){
         if (data.data.code === 200) {
           this.$router.push({
             name: 'Hello'
@@ -35,7 +33,6 @@ export default {
           console.log(data)
           this.result = data.data.message
         }
-      })
     }
   }
 }

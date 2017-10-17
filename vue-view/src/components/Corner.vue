@@ -2,20 +2,21 @@
 	<div class="Corner">
 		<div class="CornerButtons">
 			<div class="CornerAnimayedFlex">
-				<button class="Button CornerButton Button--plain">〼</button>
+				<button class="Button CornerButton Button--plain" @click="toto=true">〼</button>
 			</div>
 			<div class="CornerAnimayedFlex">
 				<button class="Button CornerButton Button--plain">△</button>
 			</div>
 		</div>
-		<div class="Card todos">
+		<div class="Card todos" v-show="toto">
 			<!--<h3 class="todos-title">Todos</h3>-->
+			<p @click="toto=false">×</p>
 			<div class="Input-wrapper Input-wrapper--spread Input-wrapper--multiline Input-wrapper--large">
 				<input class="Input" type="text" v-model="todo" @keydown.13="addTodo"/>
 			</div>
 			<div class="todos-content">
-				<ul class="todos-list" v-for="(item,index) in todos">
-					<li v-if="item.show">
+				<ul class="todos-list" v-for="(item,index) in Todos">
+					<li v-show="item.show">
 						<input type="checkbox" :checked="item.finished" @click="toggleFinish(index)"/>
 						<span :class="{'finished': item.finished}">{{item.content}}</span>
 					</li>
@@ -34,7 +35,7 @@
 		name: 'corner',
 		data () {
 			return {
-				toto: true,
+				toto: false,
 				todo: '',
 				todos: this.getCookie("todos") || []
 			}

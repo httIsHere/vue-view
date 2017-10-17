@@ -7,15 +7,15 @@
 					<div class="Card Topstory-header">
 						<div class="Topstory-header-nav">
 							<button class="Button QuestionAskButton Topstory-header-navItem Button--plain" @click="ask=true">提问</button>
-							<a href="/question" class="Topstory-header-navItem">回答</a>
-							<a href="/write" class="Topstory-header-navItem">写文章</a>
+							<a href="/#/question" class="Topstory-header-navItem">回答</a>
+							<a href="/#/write" class="Topstory-header-navItem">写文章</a>
 						</div>
-						<a href="/draft" class="Topstory-header-rightItem">草稿</a>
+						<a href="/#/draft" class="Topstory-header-rightItem">草稿</a>
 					</div>
 					<div class="Topstory-main" v-for="article in articles">
 						<div>
-							<div class="Card Topstory-item">
-								<button class="Button Topstory-item-rightButton Button--plain">×</button>
+							<div class="Card Topstory-item"v-show="article.show">
+								<button class="Button Topstory-item-rightButton Button--plain" @click="article.show=false">×</button>
 								<div class="Feed">
 									<div class="Feed-title">
 										<div class="Feed-meta">
